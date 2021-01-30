@@ -141,3 +141,8 @@ java -jar JDownloader.jar -norestart
 
 And restart the docker. 
 
+container: 
+```
+docker run -d --init --restart=always -v /media/12tb/jdownloader:/opt/JDownloader/Downloads -v /home/pi/jdownloader/cfg:/opt/JDownloader/cfg --name jdownloader -p 3129:3129 -e MYJD_USER=myuser -e MYJD_PASSWORD=mypass -e MYJD_DEVICE_NAME=raspi jaymoulin/jdownloader
+```
+
